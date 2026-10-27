@@ -1,0 +1,7 @@
+{
+  "name": "azeroth-survivors",
+  "productName": "Azeroth Survivors",
+  "version": "0.120.5",
+  "main": "main.js",
+  "private": true
+}
