@@ -18,7 +18,7 @@ No server, no account, fully offline.
 | Windows 64-bit | [AzerothSurvivors-Windows.rar](https://github.com/myslithell/azeroth-survivors/releases/latest/download/AzerothSurvivors-Windows.rar) | 755 MB |
 | macOS 13+, Apple Silicon (M1 or newer) | [AzerothSurvivors-macOS-AppleSilicon.zip](https://github.com/myslithell/azeroth-survivors/releases/latest/download/AzerothSurvivors-macOS-AppleSilicon.zip) | 1 GB |
 
-Game version: **v0.120.5** (`e0e2410c`).
+Version: Windows **v0.120.5** (the author's latest Windows build); macOS **v0.134.0**, and it updates itself.
 
 ## Windows
 
@@ -45,8 +45,12 @@ This is the official Windows build from the author's site, unchanged.
 Apple Silicon Macs only (M1, M2, M3, M4 and newer); it does not run on Intel Macs.
 
 Inside is the official browser build of the game from the author's site, packaged as a standalone
-[Electron](https://www.electronjs.org/) app. It runs offline: the app serves the game files from disk on
-`127.0.0.1:47615` and makes no network requests. The wrapper's source is in [`mac/`](mac/).
+[Electron](https://www.electronjs.org/) app. The game runs offline: the app serves the game files from disk
+on `127.0.0.1:47615`. The wrapper's source is in [`mac/`](mac/).
+
+**Updates are automatic.** On launch the app checks [wow.aethus.pl](https://wow.aethus.pl/) for a new
+version. If there is one, it downloads only what changed in the background (usually about 90 MB) and asks
+you to restart. Without internet the game starts as it is.
 
 ## Saves
 
@@ -76,7 +80,7 @@ World of Warcraft and its assets are the property of Blizzard Entertainment, Inc
 | Windows 64-bit | [AzerothSurvivors-Windows.rar](https://github.com/myslithell/azeroth-survivors/releases/latest/download/AzerothSurvivors-Windows.rar) | 755 МБ |
 | macOS 13+, Apple Silicon (M1 и новее) | [AzerothSurvivors-macOS-AppleSilicon.zip](https://github.com/myslithell/azeroth-survivors/releases/latest/download/AzerothSurvivors-macOS-AppleSilicon.zip) | 1 ГБ |
 
-Версия игры: **v0.120.5** (`e0e2410c`).
+Версия: Windows **v0.120.5** (последняя Windows-сборка автора); macOS **v0.134.0**, обновляется сама.
 
 ### Windows
 
@@ -104,7 +108,11 @@ World of Warcraft and its assets are the property of Blizzard Entertainment, Inc
 
 Внутри официальная браузерная версия игры с сайта автора, упакованная в отдельное приложение на
 [Electron](https://www.electronjs.org/). Игра работает офлайн: приложение отдаёт файлы игры с диска
-через локальный адрес `127.0.0.1:47615` и не ходит в интернет. Исходник обёртки лежит в [`mac/`](mac/).
+через локальный адрес `127.0.0.1:47615`. Исходник обёртки лежит в [`mac/`](mac/).
+
+**Обновления приходят сами.** При запуске приложение проверяет, нет ли новой версии на
+[wow.aethus.pl](https://wow.aethus.pl/). Если есть, в фоне скачивает только изменения (обычно около 90 МБ)
+и предлагает перезапустить игру. Без интернета игра запускается как есть.
 
 ### Сохранения
 
